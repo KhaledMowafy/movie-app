@@ -1,6 +1,6 @@
-# Movies App — React 19.2 + Clean Architecture
+# Movies App — React 19.1 + Clean Architecture
 
-A portfolio-ready React (19.2) project structured with **Clean Architecture**. It searches movies via OMDb, shows details, and demonstrates layered separation (Domain → Infrastructure → Application → Presentation). Tailwind v4 is used for styling.
+A portfolio-ready React (19.1) project structured with **Clean Architecture**. It searches movies via OMDb, shows details, and demonstrates layered separation (Domain → Infrastructure → Application → Presentation). Tailwind v4 is used for styling.
 
 ---
 
@@ -46,6 +46,7 @@ flowchart LR
 ## Layer Responsibilities
 
 ```mermaid
+%%{init: {'theme': 'default'}}%%
 mindmap
   root((Clean Architecture))
     Domain
