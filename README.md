@@ -257,21 +257,3 @@ VITE_OMDB_API_KEY=YOUR_KEY_HERE
 
 ---
 
-## Testing Strategy
-
-- **Domain**: pure unit tests for use-cases (no fetch).
-- **Infrastructure**: mock `fetch`; assert mapping & error translation.
-- **Application**: test hooks (debounce, abort) and DI wiring with a fake repository.
-- **Presentation**: React Testing Library — simulate typing/search, assert loading and cards.
-
----
-
-## Extending the App
-
-- Add “Top Movies by Year”:
-  1. Domain: add a new use-case + method in `MovieRepository`.
-  2. Infrastructure: implement in OMDb repo *or* introduce a `TmdbMovieRepository`.
-  3. Application: register in `container.ts`, add optional caching policy.
-  4. Presentation: new page/section calling the use-case.
-
-This preserves separation, keeps tests simple, and makes provider swaps trivial.
