@@ -15,8 +15,6 @@ A portfolio-ready React (19.1) project structured with **Clean Architecture**. I
 - [Environment](#environment)
 - [Styling (Tailwind v4)](#styling-tailwind-v4)
 - [Error Handling & Performance](#error-handling--performance)
-- [Testing Strategy](#testing-strategy)
-- [Extending the App](#extending-the-app)
 
 ---
 
