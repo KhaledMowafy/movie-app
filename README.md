@@ -32,10 +32,10 @@ A portfolio-ready React (19.2) project structured with **Clean Architecture**. I
 
 ```mermaid
 flowchart LR
-  P[Presentation\n(React pages & components)] -->|calls| A[Application\n(Hooks, DI, Cache)]
-  A -->|invokes| D[Domain\n(Use-cases, Entities, Repos interfaces)]
-  D -->|needs implementation from| I[Infrastructure\n(OMDb adapter, HTTP, Mappers, Env)]
-  I -->|returns mapped data| D
+  P["Presentation (React pages & components)"] -->|calls| A["Application (Hooks, DI, Cache)"]
+  A -->|invokes| D["Domain (Use-cases, Entities, Repos)"]
+  D -->|needs| I["Infrastructure (OMDb adapter, HTTP, Env)"]
+  I -->|returns data| D
   D -->|results| A --> P
 ```
 
